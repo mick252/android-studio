@@ -23,8 +23,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="145dp"
-        android:layout_height="209dp"
+        android:layout_width="182dp"
+        android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,31 +45,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.945" />
 
-    <TextView
-        android:id="@+id/textView6"
+    <EditText
+        android:id="@+id/editTextNumber2"
         android:layout_width="241dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="264dp"
-        android:text="welk blaadje wilt u van boom nummer (boom die je koos)?"
+        android:layout_height="81dp"
+        android:layout_marginTop="338dp"
+        android:ems="10"
+        android:hint="1-978"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.08" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="241dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="329dp"
-        android:background="#B6B6B6"
-        android:backgroundTint="#F44336"
-        android:backgroundTintMode="add"
-        android:text="(Type hier uw blaad nummer in)"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.118" />
 </androidx.constraintlayout.widget.ConstraintLayout>

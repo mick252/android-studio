@@ -1,5 +1,7 @@
 package com.example.koopeenblaadje
 
+import android.content.Intent
+import android.widget.Button
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,5 +18,10 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val knop = findViewById<Button>(R.id.button2)
+        knop.setOnClickListener{
+            val intent = Intent(this, MainActivity4::class.java)
+            startActivity(intent)}
     }
 }
