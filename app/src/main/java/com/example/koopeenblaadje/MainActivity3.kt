@@ -3,6 +3,7 @@ package com.example.koopeenblaadje
 import android.content.Intent
 import android.widget.Button
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +19,10 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val hoeveelheid = findViewById<TextView>(R.id.textView5)
+
+
 
         val knop = findViewById<Button>(R.id.button2)
         knop.setOnClickListener{
