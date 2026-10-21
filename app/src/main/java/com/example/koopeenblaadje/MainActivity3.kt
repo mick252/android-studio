@@ -19,8 +19,7 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val hoeveelheid = findViewById<TextView>(R.id.textView5)
+        val nummer = intent.extras?.getString("boomnummer")
 
 
 
