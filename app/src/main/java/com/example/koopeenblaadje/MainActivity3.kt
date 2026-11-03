@@ -19,13 +19,16 @@ class MainActivity3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val nummer = intent.extras?.getString("boomnummer")
+        val nummer = intent.getStringExtra("boomnummer").toString()
 
+        val tekst = findViewById<TextView>(R.id.textView5)
 
+        tekst.text = "U koos voor blaadje $nummer"
 
         val knop = findViewById<Button>(R.id.button2)
         knop.setOnClickListener{
             val intent = Intent(this, MainActivity4::class.java)
             startActivity(intent)}
     }
+
 }

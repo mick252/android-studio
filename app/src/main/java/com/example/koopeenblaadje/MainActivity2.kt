@@ -2,6 +2,7 @@ package com.example.koopeenblaadje
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,19 +21,30 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val nummer = findViewById<EditText>(R.id.hoeveelheid)
 
-
+        val num = nummer.text.toString()
 
         val knop = findViewById<Button>(R.id.button)
         knop.setOnClickListener{
             val intent = Intent(this, MainActivity3::class.java)
-            val nummer = findViewById<EditText>(R.id.editTextNumber)
-
-            intent.putExtra("boomnummer", nummer.text)
+            intent.putExtra("boomnummer", num)
 
             startActivity(intent)
 
         }
+//
+//        val editText = findViewById<EditText>(R.id.hoeveelheid)
+//        val button = findViewById<Button>(R.id.button)
+//
+//        button.setOnClickListener {
+//            val getal = editText.text.toString()
+//
+//            val intent = Intent(this, MainActivity3::class.java)
+//            intent.putExtra("mijnGetal", getal)
+//
+//            startActivity(intent)
+//        }
 
     }
 
