@@ -23,10 +23,11 @@ class MainActivity2 : AppCompatActivity() {
         }
         val nummer = findViewById<EditText>(R.id.hoeveelheid)
 
-        val num = nummer.text.toString()
+
 
         val knop = findViewById<Button>(R.id.button)
         knop.setOnClickListener{
+            val num = nummer.text.toString()
             val intent = Intent(this, MainActivity3::class.java)
             intent.putExtra("boomnummer", num)
 

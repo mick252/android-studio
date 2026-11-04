@@ -23,7 +23,7 @@ class MainActivity3 : AppCompatActivity() {
 
         val tekst = findViewById<TextView>(R.id.textView5)
 
-        tekst.text = "U koos voor blaadje $nummer"
+        tekst.text = "U koos voor boom $nummer"
 
         val knop = findViewById<Button>(R.id.button2)
         knop.setOnClickListener{

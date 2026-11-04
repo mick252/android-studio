@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.koopeenblaadje"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.koopeenblaadje"
@@ -37,6 +37,7 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
