@@ -18,9 +18,13 @@ class MainActivity4 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val nummer1 = intent.getStringExtra("blaadjenummer").toString()
+
         val knop = findViewById<Button>(R.id.button4)
         knop.setOnClickListener{
             val intent = Intent(this, MainActivity5::class.java)
+            intent.putExtra("blaadjenummer", nummer1)
             startActivity(intent)}
     }
 }
