@@ -52,7 +52,7 @@
         android:layout_height="71dp"
         android:layout_marginTop="301dp"
         android:ems="10"
-        android:hint="1-1000"
+        android:hint="1-inf"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
